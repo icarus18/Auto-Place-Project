@@ -25,7 +25,7 @@ public class Cnct {
     
 		public static void print() throws SQLException, Exception 
 		{
-			 String addr = "jdbc:mysql://104.155.189.121:3306/custinfo?useSSL=false";
+			 String addr = "jdbc:mysql://Localhost:3386/custinfo?useSSL=false";
              Connection conn = DriverManager.getConnection(addr,"root","bobsautocare");
              String an = "AcctNum"; String mk = "Make"; String mo = "Model"; String ye = "Year"; String oc = "Oil_Change";
              String tr = "Tire_Rotation"; String al = "Alignment"; String dt = "Date"; String tm = "Time";
@@ -57,7 +57,7 @@ public class Cnct {
        public static void insert(String a, String b, String c, int d, boolean e, boolean f, boolean g, String h, String i) throws SQLException, Exception
        {
     	   PreparedStatement preps = null;
-    	   String addr = "jdbc:mysql://104.155.189.121:3306/custinfo?useSSL=false";
+    	   String addr = "jdbc:mysql://Localhost:3386/custinfo?useSSL=false";
            Connection conn = DriverManager.getConnection(addr,"root","bobsautocare");
            
     	   System.out.print("Adding.");
@@ -81,7 +81,7 @@ public class Cnct {
        public static void remove(String a) throws SQLException, Exception
        {
     	   PreparedStatement preps = null;
-    	   String addr = "jdbc:mysql://104.155.189.121:3306/custinfo?useSSL=false";
+    	   String addr = "jdbc:mysql://Localhost:3386/custinfo?useSSL=false";
            Connection conn = DriverManager.getConnection(addr,"root","bobsautocare");
            
            System.out.print("Removing.");
@@ -104,7 +104,7 @@ public class Cnct {
        public static void updateS(String a, String b, String c)throws SQLException, Exception
        {
     	   PreparedStatement preps = null;
-    	   String addr = "jdbc:mysql://104.155.189.121:3306/custinfo?useSSL=false";
+    	   String addr = "jdbc:mysql://Localhost:3386/custinfo?useSSL=false";
            Connection conn = DriverManager.getConnection(addr,"root","bobsautocare");
     	  
            System.out.print("Updating.");
@@ -128,7 +128,7 @@ public class Cnct {
        public static void updateI(int a, String b)throws SQLException, Exception
        {
     	   PreparedStatement preps = null;
-    	   String addr = "jdbc:mysql://104.155.189.121:3306/custinfo?useSSL=false";
+    	   String addr = "jdbc:mysql://Localhost:3386/custinfo?useSSL=false";
            Connection conn = DriverManager.getConnection(addr,"root","bobsautocare");
     	  
            System.out.print("Updating.");
@@ -154,7 +154,7 @@ public class Cnct {
        public static void updateB(String a, Boolean b, String c)throws SQLException, Exception 
        {
     	   PreparedStatement preps = null;
-    	   String addr = "jdbc:mysql://104.155.189.121:3306/custinfo?useSSL=false";
+    	   String addr = "jdbc:mysql://Localhost:3386/custinfo?useSSL=false";
            Connection conn = DriverManager.getConnection(addr,"root","bobsautocare");
            
            System.out.print("Updating.");
